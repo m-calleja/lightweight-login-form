@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lottostarlet Login</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+
+
+</head>
+<body>
+
+<div class="flyout">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs responsive-tabs" role="tablist">
+        <li role="presentation">
+            <span class=" icon create-account" aria-label="Create Account"></span>
+            <a href="#home" aria-controls="create-account" role="tab" data-toggle="tab">Create Account</a>
+
+        </li>
+
+        <li role="presentation" class="active">
+            <span class=" icon login" aria-label="Login"></span>
+            <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
+
+
+        <li role="presentation">
+            <span class=" icon cart" aria-label="Cart"></span>
+            <a href="#cart" aria-controls="cart" role="tab" data-toggle="tab">Shopping Cart</a></li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade" id="home">..</div>
+
+        <div role="tabpanel" class="tab-pane fade in active" id="login">
+            <!-- tab content-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Secure Login</h3>
+                </div>
+                <div class="message-tab alert alert-danger is-hidden">
+                    <i class="glyphicon alert-ico" aria-hidden="true"></i>
+                    <!--<span class="sr-only">Error:</span>-->
+                    <span class="msg-er">Please correct the marked fields</span>
+                </div>
+                <div class="panel-body">
+                    <div id="gif">
+                        <p> You will be logged in..</p>
+                        <div class="gif-img"></div>
+                    </div>
+                    <form method="get" action="" id="login-form">
+                        <div class="control-group input-group input-group-lg ">
+                            <input type="email" class="form-control inputTextEmail" placeholder="E-mail address"
+                                   name="email" data-parsley-trigger="change" required="">
+                            <label>E-mail address</label>
+                        </div>
+                        <div class="control-group input-group input-group-lg">
+                            <input type="password" class="form-control inputTextPw" placeholder="Password"
+                                   data-parsley-trigger="keyup" data-parsley-minlength="8" data-parsley-maxlength="12"
+                                   data-parsley-minlength-message="Password needs to be at least 8-digits">
+                            <label>Password</label>
+                            <p>Forgot your password? <a href="#">Request a new one</a></p>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-default btn-lg">Login</button>
+                            <p>Not registered yet? <a href="#">Register now for free!</a></p>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div role="tabpanel" class="tab-pane fade" id="cart">...</div>
+
+    </div>
+
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"
+        integrity="sha256-ixgfZ1KX2FiT8fYtfpU1l3NgfV4X18K1XxyQkdIAd+E=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
